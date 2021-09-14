@@ -1,0 +1,222 @@
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+
+   :root {
+    --nu-blue: #0d6efd;
+    --nu-blue: #0d6efd;
+    --nu-blue: #0d6efd;
+    --nu-blue: #0d6efd;
+    --nu-blue: #0d6efd;
+    --nu-blue: #0d6efd;
+    --nu-blue: #0d6efd;
+    --nu-blue: #0d6efd;
+
+    
+  
+  }
+
+  .container{
+    max-width: 1200px;
+  }
+
+
+html {
+  color: #000;
+  /* color: var(--bs-blue); */
+  font-family: Aileron;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+h1{
+  font-size: 48px;
+  line-height: 58px;
+}
+
+h2{
+
+}
+h3{
+
+}
+h4{
+
+}
+h5{
+
+}
+h6{
+
+}
+
+
+.banner{
+  position: relative;
+}
+
+
+/*
+Comming soon part
+*/
+
+.we_will_back{
+  max-width: 703px;
+  padding: 40px 60px 66px 60px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 22px rgb(45 58 82 / 25%);
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -99px;
+  z-index: 2;
+}
+.we_will_back:before{
+  position: absolute;
+  content: '';
+  width: 133px;
+  height: 5px;
+  top: 0px;
+  background: #FDB72E;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.we_will_back h6{
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 6.22222px;
+  color: #D7D9E0;
+
+}
+.we_will_back h5{
+  font-size: 70px;
+  line-height: 84px;
+  color: #223F78;
+}
+.we_will_back p{
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 25px;
+  color: #93B9FF;
+}
+
+
+/*
+Partnership
+*/
+
+
+.partner_ship .icon{
+  width: 98px;
+  height: 98px;
+ 
+  border-radius: 50%;
+}
+
+.circle-ash{
+  background: #F0F3FF;
+}
+.circle-yellow{
+  background: #FDB72E;
+}
+
+.circle-blue{
+  background: #2F5BEA;
+}
+.circle-red{
+  background: #C23038;
+}
+.circle-light-green{
+  background: #5EBAAA;
+}
+
+/*
+our_assets
+*/
+
+.our_assets{
+  background-image: url('../img/asset-triangle.png');
+}
+
+.our_assets .single-asset{
+
+}
+.our_assets .single-asset-content{
+
+}
+
+.our_assets .single-asset-content h5{
+  font-size: 90px;
+  line-height: 108px;
+  color: #223F78;
+}
+.our_assets .single-asset-content h6{
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 6.22222px;
+  color: #223F78;
+}
+.our_assets .single-asset-content p{
+  font-size: 14px;
+  line-height: 20px;
+  color: #7E8085;
+}
+
+
+
+
+.moderator_facilitators .single_moderator{
+  background: #FFFFFF;
+  border: 1px solid #E7EAEE;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 4px rgba(44, 46, 48, 0.0504982);
+  border-radius: 5px;
+  max-width: 382px;
+}
+.moderator_facilitators .thumb .moderator{
+  width: 212px;
+  height: 212px;
+  border-radius: 50%;
+}
+.moderator_facilitators .thumb{
+  position: relative;
+}
+.moderator_facilitators .thumb .flag{
+  position: absolute;
+    bottom: -10px;
+    left: 100px;
+    right: 0;
+    margin: 0 auto;
+}
+
+.moderator_facilitators .thumb h5{
+  font-size: 28px;
+line-height: 28px;
+color: #2C2E30;
+}
+
+.moderator_facilitators .thumb p{
+  font-size: 16px;
+  line-height: 28px;  
+  color: #7E8085;
+}
+
+
+/* ==========================================================================
+   Responsive queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+
+
