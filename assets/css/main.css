@@ -1,3 +1,48 @@
+/* ==========================================================================
+   Font load
+   ========================================================================== */
+
+
+@font-face {
+  font-family: 'Aileron';
+  src: url('fonts/Aileron-SemiBold.eot');
+  src: url('fonts/Aileron-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Aileron-SemiBold.woff2') format('woff2'),
+      url('fonts/Aileron-SemiBold.woff') format('woff'),
+      url('fonts/Aileron-SemiBold.ttf') format('truetype'),
+      url('fonts/Aileron-SemiBold.svg#Aileron-SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aileron';
+  src: url('fonts/Aileron-Bold.eot');
+  src: url('fonts/Aileron-Bold.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Aileron-Bold.woff2') format('woff2'),
+      url('fonts/Aileron-Bold.woff') format('woff'),
+      url('fonts/Aileron-Bold.ttf') format('truetype'),
+      url('fonts/Aileron-Bold.svg#Aileron-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aileron';
+  src: url('fonts/Aileron-Regular.eot');
+  src: url('fonts/Aileron-Regular.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Aileron-Regular.woff2') format('woff2'),
+      url('fonts/Aileron-Regular.woff') format('woff'),
+      url('fonts/Aileron-Regular.ttf') format('truetype'),
+      url('fonts/Aileron-Regular.svg#Aileron-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -23,12 +68,17 @@
   }
 
 
-html {
+body {
   color: #000;
   /* color: var(--bs-blue); */
-  font-family: Aileron;
+  font-family: 'Aileron';
   font-size: 16px;
   line-height: 24px;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 h1{
@@ -53,8 +103,33 @@ h6{
 }
 
 
+/*
+Banner section
+*/
+
 .banner{
   position: relative;
+  height: 541px;
+  padding: 110px ;
+  padding-bottom: 242px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner .banner-content h1{
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+  color: #FFFFFF;
+  margin-bottom: 26px;
+}
+.banner .banner-content p{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 34px;
+  color: #93B9FF;
+  
+
 }
 
 
@@ -92,6 +167,7 @@ Comming soon part
   text-align: center;
   letter-spacing: 6.22222px;
   color: #D7D9E0;
+  margin-bottom: 37px;
 
 }
 .we_will_back h5{
@@ -111,12 +187,55 @@ Comming soon part
 Partnership
 */
 
+.partner_ship{
+    padding-top: 162px;
+    padding-bottom: 80px;
+}
+.partner_ship .header-contet{
+  padding-bottom: 86px;
+}
+.partner_ship h2{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 54px;
+  color: #93B9FF;
+}
+.partner_ship h1{
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 54px;  
+  color: #223F78;
+  
+}
+
+.partner_ship .icon-content{
+
+}
+.partner_ship .icon-content .single-icon-item{
+  max-width: 370px;
+}
+.partner_ship .icon-content .single-icon-item .icon{
+  margin-bottom: 35px;
+}
+.partner_ship .icon-content .single-icon-item p{
+  margin-bottom: 30px;
+}
+
+
+
+
 
 .partner_ship .icon{
   width: 98px;
   height: 98px;
- 
+
   border-radius: 50%;
+}
+
+.header-contet{
+  max-width: 539px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .circle-ash{
@@ -140,8 +259,40 @@ Partnership
 our_assets
 */
 
+
+
 .our_assets{
-  background-image: url('../img/asset-triangle.png');
+
+  padding-top: 112px;
+  padding-bottom: 58px;
+  position: relative;
+}
+
+section#our-assets:before {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #E7EAEE;
+  content: '';
+  max-width: 1200px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: -1;
+  top: 0;
+}
+section#our-assets:after{
+  position: absolute;
+  content: '';
+  width: calc(100% - 60px);
+  background-image: url(../img/asset-triangle.png);
+  height: 317px;
+  top: -100px;
+  background-size: cover;
+  background-position: center center;
+  left: 0;
+  right: 0;
+  margin: 0 auto
 }
 
 .our_assets .single-asset{
@@ -173,13 +324,110 @@ our_assets
 
 
 
+.map_section{
+  height: 1206px;
+  width: calc(100% - 91px);
+  float: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 75px;
+}
+
+
+.about_forum{
+    padding-top: 125px;
+    padding-bottom: 113px;
+    clear: both;
+}
+.about_forum .map-desktop{
+  position: relative;
+}
+.about_forum .map-desktop:before {
+  position: absolute;
+  content: '';
+  background-image: url(../img/forum-rect.svg);
+  width: 211px;
+  height: 245px;
+  top: -122px;
+  left: -122px;
+  z-index: -1;
+}
+.about_forum .map-desktop:after {
+  position: absolute;
+  content: '';
+  background-image: url('../img/patternBg.svg');
+  width: 100%;
+  height: 100%;
+  top: 40px;
+  right: 10px;
+  z-index: -1;
+  mix-blend-mode: normal;
+opacity: 0.3;
+}
+.about_forum h2{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 54px;
+  color: #93B9FF;
+}
+.about_forum h1{
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 54px;
+  color: #223F78;
+}
+.about_forum iframe{
+  background: #D8D8D8;
+    border-radius: 5px;
+}
+
+.about_lithuania{
+  background: #F6F8F9;
+  padding-top: 103px;
+  padding-bottom: 145px;
+}
+.about_lithuania h1{
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 54px;
+  color: #223F78;
+}
+.about_lithuania h2{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 54px;
+  color: #93B9FF;
+
+}
+.about_lithuania img{
+  border-radius: 5px;
+}
+
+.about_lithuania .about-content{
+  max-width: 539px;
+}
+
+.moderator_facilitators{
+  padding-top: 135px;
+  padding-bottom: 160px;
+  position: relative;
+}
+
+.moderator_facilitators .container{
+  max-width: 850px;
+}
+
 .moderator_facilitators .single_moderator{
   background: #FFFFFF;
   border: 1px solid #E7EAEE;
   box-sizing: border-box;
   box-shadow: 0px 2px 4px rgba(44, 46, 48, 0.0504982);
   border-radius: 5px;
-  max-width: 382px;
+  width: 382px;
+  height: 410px;
+  margin-bottom: 30px;
+  padding: 43px 85px 60px 85px;
+
 }
 .moderator_facilitators .thumb .moderator{
   width: 212px;
@@ -188,6 +436,7 @@ our_assets
 }
 .moderator_facilitators .thumb{
   position: relative;
+  margin-bottom: 35px;
 }
 .moderator_facilitators .thumb .flag{
   position: absolute;
@@ -199,8 +448,8 @@ our_assets
 
 .moderator_facilitators .thumb h5{
   font-size: 28px;
-line-height: 28px;
-color: #2C2E30;
+  line-height: 28px;
+  color: #2C2E30;
 }
 
 .moderator_facilitators .thumb p{
@@ -209,6 +458,37 @@ color: #2C2E30;
   color: #7E8085;
 }
 
+
+.organizers{
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.organizers h3{
+  padding-bottom: 65px;
+}
+
+
+footer{
+  border-top: 1px solid #D7D7D7;
+  padding: 24px 125px 30px 125px ;
+}
+
+footer ul li{
+  margin: 0 10px;
+  display: inline-block;
+}
+footer ul li a{
+  width: 29px;
+  height: 29px;
+  background: #2F5BEA;
+  display: block;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* ==========================================================================
    Responsive queries
