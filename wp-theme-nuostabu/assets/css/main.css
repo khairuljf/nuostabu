@@ -1,0 +1,1061 @@
+/* ==========================================================================
+   Font load
+   ========================================================================== */
+
+@font-face {
+	font-family: "Aileron";
+	src: url("fonts/Aileron-SemiBold.eot");
+	src: url("fonts/Aileron-SemiBold.eot?#iefix") format("embedded-opentype"), url("fonts/Aileron-SemiBold.woff2") format("woff2"), url("fonts/Aileron-SemiBold.woff") format("woff"), url("fonts/Aileron-SemiBold.ttf") format("truetype"), url("fonts/Aileron-SemiBold.svg#Aileron-SemiBold") format("svg");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Aileron";
+	src: url("fonts/Aileron-Bold.eot");
+	src: url("fonts/Aileron-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/Aileron-Bold.woff2") format("woff2"), url("fonts/Aileron-Bold.woff") format("woff"), url("fonts/Aileron-Bold.ttf") format("truetype"), url("fonts/Aileron-Bold.svg#Aileron-Bold") format("svg");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Aileron";
+	src: url("fonts/Aileron-Regular.eot");
+	src: url("fonts/Aileron-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/Aileron-Regular.woff2") format("woff2"), url("fonts/Aileron-Regular.woff") format("woff"), url("fonts/Aileron-Regular.ttf") format("truetype"), url("fonts/Aileron-Regular.svg#Aileron-Regular") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+
+
+body {
+	color: #000;
+	font-family: "Aileron";
+	font-size: 16px;
+	line-height: 24px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+h1 {
+	font-size: 48px;
+	line-height: 58px;
+}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+/*
+Banner section
+*/
+
+.banner {
+	position: relative;
+	height: 541px;
+	padding-top: 110px;
+	padding-bottom: 242px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+.banner .banner-content h1 {
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 58px;
+	color: #ffffff;
+	margin-bottom: 26px;
+}
+
+.banner .banner-content p {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 34px;
+	color: #93b9ff;
+}
+
+.arrow-down {
+	display: none;
+}
+
+/*
+Comming soon part
+*/
+
+.we_will_back {
+	max-width: 703px;
+	padding: 40px 60px 66px 60px;
+	margin: 0 auto;
+	background: #ffffff;
+	box-shadow: 0px 6px 22px rgb(45 58 82 / 25%);
+	border-radius: 5px;
+	margin-top: 83px;
+	height: 270px;
+	position: relative;
+}
+
+.we_will_back:before {
+	position: absolute;
+	content: "";
+	width: 133px;
+	height: 5px;
+	top: 0px;
+	background: #fdb72e;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+.we_will_back h6 {
+	font-size: 14px;
+	line-height: 17px;
+	text-align: center;
+	letter-spacing: 6.22222px;
+	color: #d7d9e0;
+	margin-bottom: 37px;
+}
+
+.we_will_back h5 {
+	font-size: 70px;
+	line-height: 84px;
+	color: #223f78;
+	font-weight: 400;
+}
+
+.we_will_back p {
+	font-weight: bold;
+	font-size: 21px;
+	line-height: 25px;
+	color: #93b9ff;
+}
+
+/*
+Partnership
+*/
+.partners img {
+	margin-bottom: 38px;
+}
+.partner_ship {
+	padding-top: 162px;
+	padding-bottom: 66px;
+
+}
+
+.partner_ship .header-content{
+	padding-bottom: 86px;
+}
+
+.partner_ship h2 {
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 54px;
+	color: #93b9ff;
+}
+
+.partner_ship h1 {
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 54px;
+	color: #223f78;
+}
+
+.partner_ship .icon-content {
+	/* column-gap: 80px; */
+	/* row-gap: 40px; */
+	/* grid-template-columns: repeat(3, 1fr);  */
+}
+
+.partner_ship .icon-content .single-icon-item {
+	max-width: 346px;
+	padding: 0;
+	/* width: 100%; */
+	box-sizing: border-box;
+}
+
+.partner_ship .icon-content .single-icon-item:nth-child(2) .icon {
+	background: #fdb72e;
+}
+
+.partner_ship .icon-content .single-icon-item:nth-child(3) .icon {
+	background: #2f5bea;
+}
+
+.partner_ship .icon-content .single-icon-item:nth-child(4) .icon {
+	background: #c23038;
+}
+
+.partner_ship .icon-content .single-icon-item:last-child .icon {
+	background: #5ebaaa;
+}
+
+.ml-0 {
+	margin-left: 0 !important;
+}
+
+/* .mb-40 {
+  margin-bottom: 40px;
+} */
+
+.partner_ship .icon-content .single-icon-item+.single-icon-item {
+	margin-left: 80px;
+}
+
+.partner_ship .icon-content .single-icon-item .icon {
+	margin-bottom: 35px;
+}
+
+.partner_ship .icon-content .single-icon-item p {
+	margin-bottom: 30px;
+	text-align: justify;
+}
+
+.partner_ship .icon-content .single-icon-item .icon img {
+	max-width: 61px;
+	height: 61px;
+	object-fit: cover;
+}
+
+.partner_ship .icon {
+	width: 98px;
+	height: 98px;
+	border-radius: 50%;
+}
+
+.header-content {
+	max-width: 539px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.circle-ash {
+	background: #f0f3ff;
+}
+
+.circle-yellow {
+	background: #fdb72e;
+}
+
+.circle-blue {
+	background: #2f5bea;
+}
+
+.circle-red {
+	background: #c23038;
+}
+
+.circle-light-green {
+	background: #5ebaaa;
+}
+
+/*
+our_assets
+*/
+
+.our_assets {
+	padding-top: 112px;
+	padding-bottom: 68px;
+	position: relative;
+}
+
+.our_assets>.container {
+	z-index: 2;
+	position: relative;
+}
+
+section#our-assets:before {
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	background: #e7eaee;
+	content: "";
+	max-width: 1200px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	z-index: -1;
+	top: 0;
+}
+
+section#our-assets:after {
+	position: absolute;
+	content: "";
+	width: calc(100% - 60px);
+	background: url(../img/asset-triangle.png) no-repeat center center/ cover;
+	height: 317px;
+	top: -100px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+.our_assets .single-asset-content {
+	position: relative;
+	z-index: 2;
+}
+
+.our_assets .single-asset-content h5 {
+	font-size: 90px;
+	line-height: 108px;
+	color: #223f78;
+}
+
+.our_assets .single-asset-content h6 {
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 17px;
+	text-align: center;
+	letter-spacing: 6.22222px;
+	color: #223f78;
+	margin-bottom: 20px;
+}
+
+.our_assets .single-asset-content p {
+	font-size: 14px;
+	line-height: 20px;
+	color: #7e8085;
+	max-width: 250px;
+	margin: auto;
+}
+
+.map_section {
+	height: 1206px;
+	width: calc(100% - 91px);
+	float: right;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*.about_forum .map-desktop{*/
+/*	width: max-content;*/
+/*	height: 100%;*/
+/*}*/
+
+.about_lithuania .lithuania-thumb{
+	position: relative;
+}
+.about_lithuania .lithuania-thumb img{
+	position: relative;
+	z-index: 2;
+}
+.about_lithuania .lithuania-thumb:after{
+	position: absolute;
+	content: "";
+	background: url(../img/2ndbg.svg) no-repeat center center/ 15px 391px;
+	width: 546px;
+	height: 387px;
+	top: 24px;
+	z-index: 1;
+	mix-blend-mode: normal;
+	background-repeat: repeat-x;
+	left: 24px;
+}
+
+.about_forum {
+	padding-top: 172px;
+	padding-bottom: 137px;
+	clear: both;
+}
+
+.about_forum .map-desktop iframe{
+	width: 100%;
+	height: 382px;
+}
+
+
+
+.about_forum .map-desktop {
+	position: relative;
+}
+
+.about_forum .map-desktop:before {
+	position: absolute;
+	content: "";
+	background-image: url(../img/forum-rect.svg);
+	width: 211px;
+	height: 245px;
+	top: -122px;
+	left: -122px;
+	z-index: -1;
+}
+
+.about_forum .map-desktop:after {
+	position: absolute;
+	content: "";
+	background: url("../img/map-bg-pattern2.svg") no-repeat center center/ 15px 391px;
+	width: 555px;
+	height: 391px;
+	top: 24px;
+	z-index: -1;
+	mix-blend-mode: normal;
+	opacity: 0.3;
+	background-repeat: repeat-x;
+	left: 24px;
+}
+
+.about_forum h2 {
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 24px;
+	color: #93b9ff;
+	margin-bottom: 8px;
+}
+
+.about_forum h1 {
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 54px;
+	color: #223f78;
+	margin-bottom: 30px;
+}
+
+.about_forum iframe {
+	background: #d8d8d8;
+	border-radius: 5px;
+}
+
+.about_forum .desc {
+	margin-bottom: 14px;
+	text-align: justify;
+}
+
+.about_forum a {
+	font-weight: 700;
+	line-height: 20px;
+	margin-top: 3px;
+}
+
+
+
+.about_lithuania {
+	background: #f6f8f9;
+	padding-top: 103px;
+	padding-bottom: 145px;
+}
+
+.about_lithuania a{
+	font-weight: 700;
+	line-height: 20px;
+	margin-top: 3px;
+	position: relative;
+}
+.about_lithuania a:after{
+	position: absolute;
+	content: '';
+	background-image: url(../img/arrow.svg);
+	width: 12px;
+	height: 8px;
+	right: -18px;
+	background-size: cover;
+	top: 42%;
+}
+
+.map-mobile {
+	width: 539px;
+	padding: 0;
+}
+
+.map-desktop {
+	width: calc(100% - 539px);
+	padding: 0;
+	padding-right: 119px;
+}
+
+.about_lithuania h1 {
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 54px;
+	color: #223f78;
+	margin-bottom: 30px;
+}
+
+.about_lithuania h2 {
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 54px;
+	color: #93b9ff;
+}
+
+.about_lithuania img {
+	border-radius: 5px;
+}
+
+.about_lithuania .about-content {
+	max-width: 539px;
+}
+
+.about-content.hide_from_tab {
+	display: none;
+}
+
+.moderator_facilitators {
+	padding-top: 135px;
+	padding-bottom: 130px;
+	position: relative;
+}
+.moderator_facilitators:before{
+	position: absolute;
+	content: '';
+	width: 100%;
+	background: url(../img/moderatorbg.svg);
+	height: 490px;
+	left: 0;
+	top: -76px;
+	z-index: 1;
+	background-size: cover;
+}
+
+.moderator_facilitators:after{
+	position: absolute;
+	content: "";
+	background: url(../img/mbg.svg) no-repeat center center/ 15px 391px;
+	width: 100%;
+	height: 328px;
+	bottom: 0;
+	z-index: 1;
+	mix-blend-mode: normal;
+	background-repeat: repeat-x;
+	left: 0;
+	right: 0;
+}
+
+.moderator_facilitators h1{
+	margin-bottom: 50px;
+	color: #223F78;
+}
+.moderator_facilitators .container {
+	max-width: 850px;
+}
+
+.moderator_facilitators .single_moderator {
+	background: #ffffff;
+	border: 1px solid #e7eaee;
+	box-sizing: border-box;
+	box-shadow: 0px 2px 4px rgba(44, 46, 48, 0.0504982);
+	border-radius: 5px;
+	width: 382px;
+	height: 410px;
+	margin-bottom: 30px;
+	padding: 43px 85px 60px 85px;
+	z-index: 2;
+
+}
+
+.moderator_facilitators .thumb .moderator {
+	width: 212px;
+	height: 212px;
+	border-radius: 50%;
+}
+
+.moderator_facilitators .thumb {
+	position: relative;
+	margin-bottom: 35px;
+}
+
+.moderator_facilitators .thumb .flag {
+	position: absolute;
+	bottom: -10px;
+	left: 100px;
+	right: 0;
+	margin: 0 auto;
+}
+
+.moderator_facilitators .thumb h5 {
+	font-size: 28px;
+	line-height: 28px;
+	color: #2c2e30;
+}
+
+.moderator_facilitators .thumb p {
+	font-size: 16px;
+	line-height: 28px;
+	color: #7e8085;
+}
+
+.organizers {
+	padding-top: 60px;
+	padding-bottom: 75px;
+}
+.organizers H3{
+	margin-bottom: 30px;
+}
+.partners.organizers{
+	padding-top: 0px;
+	padding-bottom: 45px;
+}
+.logos h3 {
+	padding-bottom: 25px;
+	font-weight: bold;
+	font-size: 21px;
+	line-height: 25px;
+	text-align: center;
+	color: #2C2E30;
+}
+
+footer {
+	border-top: 1px solid #d7d7d7;
+	padding: 24px 0 31px;
+}
+.copyright p {
+	font-size: 14px;
+	line-height: 17px;
+	font-weight: 700;
+}
+footer ul {
+	margin-bottom: 0;
+	display: inline-flex;
+}
+footer ul li + li{
+	margin-left: 17px;
+}
+footer ul li {
+	margin: 0;
+	display: inline-block;
+}
+
+footer ul li a {
+	width: 29px;
+	height: 29px;
+	background: #2f5bea;
+	display: block;
+	border-radius: 50%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+footer {
+    padding: 23px 30px 30px;
+}
+
+footer .container {
+    padding: 0;
+}
+/* ==========================================================================
+   Responsive queries
+   ========================================================================== */
+
+@media(min-width: 1366px) {
+	.container {
+		max-width: 1200px;
+	}
+}
+
+@media(min-width: 1024px) {
+	.partners .single-partner{
+		width:calc(100%/5);
+	}
+}
+
+@media(min-width: 768px) {
+	.moderator_facilitators a{
+		display: none;
+	}
+}
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+	.map-mobile {
+		width: 480px;
+	}
+	.map-desktop {
+		width: calc(100% - 480px);
+		padding-right: 60px;
+	}
+	.about_forum .map-desktop:after {
+		width: 430px;
+	}
+	.about_forum .container {
+		max-width: 960px;
+	}
+	.partner_ship .icon-content .single-icon-item+.single-icon-item {
+		margin-left: 40px;
+	}
+	.partner_ship .icon-content .single-icon-item {
+		max-width: 300px;
+	}
+	/* Counter Section */
+	section#our-assets:before {
+		width: 90%;
+	}
+	.about_lithuania .lithuania-thumb:after {
+		width: 100%;
+		height: 100%;
+	}
+
+}
+
+@media only screen and (max-width: 1024px) {
+	.partner_ship .icon-content .single-icon-item.ml-0 {
+		margin-left: 40px !important;
+	}
+	.partner_ship .icon-content .single-icon-item:last-child {
+		margin-left: 0;
+	}
+	.map_section {
+		width: 100%;
+	}
+	.moderator_facilitators:before{
+		content: none;
+	}
+
+
+}
+
+@media (max-width: 991px) {
+	.banner {
+		padding-top: 75px;
+		padding-bottom: 30px;
+	}
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+	.map-mobile {
+		width: 350px;
+	}
+	.about_forum h1 {
+		font-size: 28px;
+		line-height: 40px;
+	}
+	.about_forum .desc {
+		font-size: 14px;
+	}
+	.map-desktop {
+		width: calc(100% - 350px);
+		padding-right: 40px;
+	}
+	.about_forum .map-desktop:after {
+		width: 340px;
+	}
+	.about_forum .container {
+		max-width: 720px;
+	}
+}
+@media (min-width: 992px) {
+.lithuania-thumb.desktop{
+	display: block!important;
+}
+
+}
+
+@media (max-width: 767px) {
+	.banner {
+		height: 604px;
+		background-image: url(../img/header-mobile.svg) !important;
+		background-size: 100% auto;
+	}
+	.banner .col-6 {
+		width: 100%;
+	}
+	.banner .banner-content h1 {
+		margin-bottom: 6px;
+	}
+	.banner .banner-content p {
+		max-width: 230px;
+		margin: 0 auto;
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.we_will_back:before {
+	    width: 67px;
+	    height: 3px;
+	}
+
+	.we_will_back {
+		height: 136px;
+		padding: 20px 30px;
+		margin: 51px 10px 0;
+	}
+	.we_will_back h6 {
+		margin-bottom: 13px;
+	}
+	.we_will_back h5 {
+		font-size: 40px;
+		line-height: 48px;
+	}
+	.we_will_back p {
+		font-size: 14px;
+		line-height: 17px;
+	}
+	.arrow-down {
+		display: block;
+		margin: 32px auto 45px;
+	}
+	.we_will_back {
+		height: 136px;
+	}
+	.about_forum {
+		padding-top: 20px;
+		padding-bottom: 45px;
+	}
+
+	.about_forum h2, .about_forum h1{
+		text-align: center;
+	}
+	.about_forum p{
+		text-align: justify;
+		margin-top: 55px;
+		padding: 0 15px;
+	}
+	.about_forum a{
+		padding: 0 15px;
+		overflow: hidden;
+		display: inherit
+	}
+	.about-content.first {
+		margin-bottom: 13px;
+	}
+	.about-content.hide_from_tab {
+		display: block !important;
+	}
+	.about-content .hide_on_phone {
+		display: none !important;
+	}
+	.about_forum .map-desktop {
+		margin: 0 auto;
+		width: 100%;
+		padding: 0 16px;
+		max-height: 250px;
+	}
+	.about_forum .mobile-map iframe {
+		height: 250px;
+		width: 800%;
+	}
+	.about_forum  .mobile-map{
+		position: relative;
+	}
+
+	.about_forum  .mobile-map:after{
+	position: absolute;
+	content: "";
+	background: url(../img/map-bg-pattern2.svg) no-repeat center center/ 9px 250px;
+	width: 100%;
+	height: 250px;
+	top: 35px;
+	z-index: -1;
+	mix-blend-mode: normal;
+	opacity: 0.3;
+	background-repeat: repeat-x;
+	left: 0px;
+}
+	.about_forum .map-desktop:after {
+		width: calc(100% + 16px);
+		left: -16px;
+		right: -16px;
+		height: calc(100% + 10px);
+	}
+	.about_forum h2 {
+		font-size: 16px;
+		line-height: 43px;
+	}
+	.about_forum h1 {
+		font-size: 30px;
+		line-height: 43px;
+	}
+	.map-mobile {
+		width: 100%;
+		padding: 0px 10px 0;
+	}
+	section#our-assets:before {
+		width: 100%;
+	}
+	.our_assets {
+		padding-top: 40px;
+		padding-bottom: 0;
+	}
+	.our_assets .single-asset-content h6 {
+		margin-bottom: 10px;
+	}
+	.our_assets .single-asset+.single-asset {
+		margin-top: 42px;
+	}
+	section#our-assets:after {
+		background-image: url(../img/mobile-shape.svg);
+		background-size: 100% 195px;
+		width: 100%;
+		height: 195px;
+		top: 20px;
+	}
+	.partner_ship .icon-content .single-icon-item {
+		max-width: 90%;
+		margin: auto !important;
+	}
+	.partner_ship .icon-content .single-icon-item.ml-0 {
+		margin-left: auto !important;
+	}
+	.partner_ship .icon-content .single-icon-item .icon {
+		margin-bottom: 23px;
+	}
+	.partner_ship .icon-content .single-icon-item p {
+		margin-bottom: 22px;
+	}
+	.partner_ship {
+		padding-top: 20px;
+		padding-bottom: 37px;
+	}
+	.partner_ship h2 {
+		font-size: 24px;
+		line-height: 43px;
+	}
+	.partner_ship h1 {
+		font-size: 30px;
+		line-height: 43px;
+	}
+	.partner_ship .header-content {
+		padding-bottom: 44px;
+	}
+	.map_section{
+		height: 516px;
+	}
+	.about_lithuania {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.about_lithuania .container{
+		max-width: 100%;
+	}
+	.about_lithuania .about-content {
+		max-width: 100%;
+	}
+	.about_lithuania h2,.partner_ship h2{
+		font-size: 16px;
+		line-height: 43px;
+		text-align: center;
+	}
+	.about_lithuania .lithuania-thumb {
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+
+	.about_lithuania h1{
+		text-align: center;
+		font-size: 30px;
+		line-height: 43px;
+	}
+	.about_lithuania p{
+		margin-top: 55px;
+		padding: 0 15px;
+	}
+	.about_lithuania a{
+		padding: 0 15px;
+	}
+	.about_lithuania img{
+		height: 250px;
+		width: 100%;
+		object-fit: cover;
+	}
+	.about_lithuania .lithuania-thumb:after {
+
+		background: url(../img/2ndbg.svg) no-repeat center center/ 9px 250px;
+		width: 100%;
+		height: 250px;
+		top: unset;
+		z-index: 1;
+		mix-blend-mode: normal;
+		background-repeat: repeat-x;
+		left: 0;
+		bottom: -28px;
+	}
+	.moderator_facilitators {
+		padding-top: 30px;
+		padding-bottom: 20px;
+	}
+	.moderator_facilitators h1{
+		font-size: 30px;
+		line-height: 43px;
+		margin-bottom: 30px;
+	}
+.moderator_facilitators .single_moderator{
+	width: 315px;
+	height: 320px;
+	padding: 30px 10px 20px 10px;
+}
+.moderator_facilitators .thumb .moderator {
+	width: 164px;
+	height: 164px;
+}
+.moderator_facilitators .single_moderator h5{
+	margin-bottom: 15px;
+	font-size: 28px;
+	line-height: 28px;
+	color: #2C2E30;
+}
+.moderator_facilitators a{
+	z-index: 2;
+}
+	.moderator_facilitators:after {
+		position: absolute;
+		content: "";
+		width: 100%;
+		height: 80%;
+		bottom: 0;
+		z-index: 1;
+		mix-blend-mode: normal;
+		background-repeat: repeat;
+		left: 0;
+		right: 0;
+		background-position: bottom center;
+		background-size: 9px;
+	}
+	.moderator_facilitators .single_moderator p{
+		font-size: 16px;
+		line-height: 28px;
+		color: #7E8085;
+	}
+.organizers {
+    padding-top: 29px;
+    padding-bottom: 0px;
+}
+
+.logos .col-3 + .col-3{
+	margin-top: 30px;
+}
+.logos .col-3 {
+	width: 100%;
+}
+.logos.partners .col-3 + .col-3 {
+	margin-top: 14px;
+}
+.logos.partners .col-3 {
+	width: 50%;
+}
+.logos.partners {
+	padding-bottom: 45px;
+}
+.logos.partners img {
+	margin-bottom: 0;
+}
+.organizers .organizer-log{
+	margin-bottom: 30px;
+}
+.partners.organizers {
+	padding-top: 0px;
+	padding-bottom: 0;
+}
+.partners.logos h3 {padding-bottom: 3px;}
+	footer {
+		padding: 17px 30px 31px;
+	}
+}
